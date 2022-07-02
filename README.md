@@ -65,3 +65,33 @@ It will stop the current netstats client processes, automatically detect your et
 [travis-url]: https://travis-ci.org/cubedro/eth-net-intelligence-api
 [dep-image]: https://david-dm.org/cubedro/eth-net-intelligence-api.svg
 [dep-url]: https://david-dm.org/cubedro/eth-net-intelligence-api
+
+
+api: null
+canUpdateHistory: true
+client: "0.1.1"
+coinbase: null
+contact: ""
+ip: "::ffff:127.0.0.1"
+name: "qng"
+net: null
+node: null
+os: "darwin"
+os_v: "18.7.0"
+port: "18150"
+protocol: null
+
+
+api: "/ip4/8.210.11.55/tcp/18160/p2p/16Uiu2HAkxLuCw6iVCDHHBZSuhJh7KZA1XVUtUq2Ekq1NC89UUYWg"
+canUpdateHistory: true
+client: "0.1.1"
+coinbase: "16Uiu2HAkxLuCw6iVCDHHBZSuhJh7KZA1XVUtUq2Ekq1NC89UUYWg"
+contact: ""
+ip: "::ffff:127.0.0.1"
+name: "qng"
+net: "mixnet"
+node: 125941
+os: "darwin"
+os_v: "18.7.0"
+port: "18150"
+protocol: "39/1.0.13+dev-913550a/1001300"
