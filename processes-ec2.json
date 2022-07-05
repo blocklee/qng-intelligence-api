@@ -1,43 +1,30 @@
 [
   {
-    "name"              : "eth",
-    "cwd"               : "/home/ubuntu/bin/www/",
-    "script"            : "bin/eth.sh",
-    "args"              : "ethpassword",
-    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
-    "log_file"          : "/home/ubuntu/logs/eth-log.log",
-    "out_file"          : "/home/ubuntu/logs/eth-out.log",
-    "error_file"        : "/home/ubuntu/logs/eth-err.log",
-    "merge_logs"        : false,
-    "watch"             : false,
-    "max_restarts"      : 10,
-    "exec_interpreter"  : "bash",
-    "exec_mode"         : "fork_mode"
-  },
-  {
-    "name"              : "node-app",
-    "cwd"               : "/home/ubuntu/bin/www/",
-    "script"            : "app.js",
-    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
-    "log_file"          : "/home/ubuntu/logs/node-app-log.log",
-    "out_file"          : "/home/ubuntu/logs/node-app-out.log",
-    "error_file"        : "/home/ubuntu/logs/node-app-err.log",
-    "merge_logs"        : false,
-    "watch"             : false,
-    "max_restarts"      : 10,
-    "exec_interpreter"  : "node",
-    "exec_mode"         : "fork_mode",
-    "env":
-    {
-      "NODE_ENV"        : "production",
-      "RPC_HOST"        : "localhost",
-      "RPC_PORT"        : "8545",
-      "LISTENING_PORT"  : "30303",
-      "INSTANCE_NAME"   : "",
-      "CONTACT_DETAILS" : "",
-      "WS_SERVER"       : "wss://rpc.ethstats.net",
-      "WS_SECRET"       : "see http://forum.ethereum.org/discussion/2112/how-to-add-yourself-to-the-stats-dashboard-its-not-automatic",
-      "VERBOSITY"       : 2
+    "name": "node-app",
+    "cwd": "/opt/qng-intelligence-api",
+    "script": "app.js",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "log_file": "/opt/qng-intelligence-api/logs/node-app-log.log",
+    "out_file": "/opt/qng-intelligence-api/logs/node-app-out.log",
+    "error_file": "/opt/qng-intelligence-api/logs/node-app-err.log",
+    "merge_logs": false,
+    "watch": false,
+    "max_restarts": 10,
+    "exec_interpreter": "node",
+    "exec_mode": "fork_mode",
+    "env": {
+      "QNG_RPC_HOST": "https://127.0.0.1:18132",
+      "QNG_RPC_USER": "test",
+      "QNG_RPC_PASS": "test",
+      "NODE_ENV": "production",
+      "RPC_HOST": "127.0.0.1",
+      "RPC_PORT": "1234",
+      "LISTENING_PORT": "18150",
+      "INSTANCE_NAME": "QNG",
+      "CONTACT_DETAILS": "",
+      "WS_SERVER": "wss://127.0.0.1:3000",
+      "WS_SECRET": "abc123",
+      "VERBOSITY": 2
     }
   }
 ]

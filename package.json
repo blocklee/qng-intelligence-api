@@ -10,12 +10,16 @@
   "dependencies": {
     "async": "^1.0.0",
     "chalk": "^1.0.0",
+    "coffee": "^5.4.0",
     "debounce": "1.0.0",
     "debug": "2.2.0",
     "lodash": "4.1.0",
     "primus": "4.0.5",
     "primus-emit": "1.0.0",
     "primus-spark-latency": "0.1.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "rpc-client": "^1.0.1",
     "web3": "0.15.3",
     "ws": "^1.0.1"
   },
