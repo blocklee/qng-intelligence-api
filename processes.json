@@ -1,0 +1,31 @@
+[
+  {
+    "name"              : "node-app",
+    "cwd"               : "./",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "log_file"          : "./logs/node-app-log.log",
+    "out_file"          : "./logs/node-app-out.log",
+    "error_file"        : "./logs/node-app-err.log",
+    "merge_logs"        : false,
+    "watch"             : false,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "QNG_RPC_HOST": "https://127.0.0.1:18131",
+      "QNG_RPC_USER": "qitmeer",
+      "QNG_RPC_PASS": "qitmeer123",
+      "NODE_ENV": "production",
+      "RPC_HOST": "127.0.0.1",
+      "RPC_PORT": "1234",
+      "LISTENING_PORT": "18130",
+      "INSTANCE_NAME": "QNG",
+      "CONTACT_DETAILS": "",
+      "WS_SERVER": "ws://127.0.0.1:3000",
+      "WS_SECRET": "abc123",
+      "VERBOSITY": 2
+    }
+  }
+]

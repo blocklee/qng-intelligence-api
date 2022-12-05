@@ -25,7 +25,7 @@ process.on('SIGINT', gracefulShutdown);
 
 // listen for shutdown signal from pm2
 process.on('message', function(msg) {
-	if (msg == 'shutdown')
+	if (msg === 'shutdown')
 		gracefulShutdown();
 });
 
